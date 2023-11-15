@@ -1,56 +1,592 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       Kuku's Kitchen | Services
     </title>
+    <!-- Add Metadata here -->
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+    <link rel="stylesheet" type="text/css" href="custom-style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <script src="script.js"></script>
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/2-2.png" alt="Kuku's Kitchen Logo">
+          </a>
+        </div>
+        <div class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</li>
-          <li><a href="service.html">Services</li>
-          <li><a href="recipe.html">Receipe Collection</li>
-          <li><a href="contact.html">Contact Us</li>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
         </ul>
+        </div>
       </nav>
+      
     </header>
-    <section id="hero"></section>
-    <section id="service"></section>
     
-<!-- Contact Us Section -->
-<section id="contact">
-  <h5>Ready to Serve You. </h5>
-  <p>
-    If you have any inquiries, 
-    wish to book our catering services, 
-    or simply want to share your culinary passion, 
-    please feel free to get in touch with us. 
-    Our team is ready to assist you on your culinary journey.
-  </p>
+     <!-- Hero Section -->
+     <section id="hero">
+      <div id="hero-content">
+        <div>
+          <h1 class="headline">
+            Weaving Culinary 
+            Experiences that last a Lifetime
+          </h1>
+          <p>
+            Explore our services and 
+            discover the artistry and innovation 
+            that defines us as culinary gurus.
+          </p>
+        </div>
+        <div>
+          <a href="#service-intro">
+            <button>
+              Learn More
+            </button>
+          </a>
+        </div>
+      </div>
 
-  <form action="your-server-script.php" method="post" autocomplete="on">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" required>
-    <label for="comments">Comments</label>
-    <textarea id="comments" name="comments" rows="4" required></textarea>
-    <input type="submit" value="Submit">
-  </form>
-</section>
+      <div id="hero1" class="hero-div">
+        <div id="hero2" class="hero-div">
+          <div id="hero3" class="hero-div">
+            <div id="hero4" class="hero-div">
+              <div id="slideshow" class="slideshow">
+                <img id="hero-image" src="images/chicken-2.jpg" class="slide active">
+                <img id="hero-image" src="images/cook-1.jpg" class="slide">
+                <img id="hero-image" src="images/fish-1.jpg" class="slide">
+                <div id="dot-container">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="img-background" id="service1">
+      <div  id="service-intro">
+        <div>
+          <h5>
+            Welcome to Kuku's Kitchen Services!
+          </h5>
+          <p>
+            At Kuku's Kitchen, we bring culinary 
+            excellence to your fingertips, crafting 
+            unforgettable experiences that tantalize 
+            your taste buds and elevate your events. 
+            Our journey in the world of gastronomy is a 
+            testament to our passion for food and dedication 
+            to delivering exceptional service.
+          </p>
+        </div>
+        <div>
+          <h5>Who We Are</h5>
+          <p>
+            Founded with a love for creating delectable memories, 
+            Kuku's Kitchen is a culinary haven led by Chef Kukua 
+            Johnson. With a wealth of experience and a commitment 
+            to innovation, Chef Kukua and her team bring a unique 
+            blend of expertise and creativity to the world of food.
+          </p>
+        </div>
+      </div>
+      <div  id="service-summary">
+        <h6>Service Overview</h6>
+        <p>Embark on a gastronomic adventure with our diverse range of services tailored to meet your every culinary need:</p>
+        <p>
+          <ul>
+            <li>
+              <h6>Catering:</h6>
+              <p>
+                Immerse yourself in the world of exquisite flavors with our 
+                catering service. From weddings to corporate events and private 
+                celebrations, our team curates menus that reflect your style, 
+                ensuring a feast that leaves a lasting impression.
+              </p>
+            </li>
+
+            <li>
+              <h6>Personal Chef:</h6>
+              <p>
+                Experience the luxury of a personal chef bringing the magic 
+                of Kuku's Kitchen directly to your home. Our personal chef 
+                service is designed for intimate gatherings, ensuring a bespoke 
+                dining experience tailored to your preferences.
+              </p>
+            </li>
+            
+            <li>
+              <h6>Cooking Classes:</h6>
+              <p>Unlock the secrets of gourmet cooking with Kuku's Kitchen 
+                cooking classes. Led by Chef Kukua Johnson, our classes are 
+                a blend of education and enjoyment, catering to both beginners 
+                and seasoned home cooks.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>Explore our services and let Kuku's Kitchen turn your culinary 
+          dreams into reality. Whether it's a grand event, an intimate 
+          gathering, or a desire to enhance your cooking skills, we are 
+          here to create moments that linger on your palate and in your 
+          memories.<br>
+          Indulge in the artistry of Kuku's Kitchen, where every dish 
+          tells a story, and every event becomes a culinary masterpiece.
+        </p>
+        <a href="mailto:info@kukuskitchen.com"><button>Get a Quote</button></a>
+      </div>
+    </section>
+
+    <section class="black-div" id="catering">
+      <h5>Catering</h5>
+      <p>
+        At Kuku's Kitchen, our catering service 
+        is a symphony of flavors and creativity, 
+        transforming your events into unforgettable 
+        culinary journeys. Whether you're planning a 
+        dreamy wedding, a sophisticated corporate 
+        gathering, or an intimate private celebration, 
+        our team is dedicated to curating a bespoke 
+        menu that not only suits your taste but also 
+        reflects the unique essence of your event.
+      </p>
+      
+      <div class=background-img-div id="event-types">
+        <h6>Types of Events</h6>
+        <div id="event-div">
+          <div class="staff-card">
+            <h6>weddings</h6>
+            <div class="profile">
+              <img class="profile-image" src="images/cater-3.jpg">
+            </div>
+            <div class="event-info">
+              <p>
+                Celebrate the most important day of 
+                your life with Kuku's Kitchen catering. 
+                Our wedding catering service is tailored 
+                to add a touch of culinary magic to your 
+                special day. From exquisite appetizers to 
+                indulgent main courses and delectable desserts, 
+                every dish is crafted with precision and passion.
+              </p>
+            </div>
+            <a href="mailto:info@kukuskitchen.com">
+              <button>Book Now</button>
+            </a>
+          </div>
+
+          <div class="staff-card">
+            <h6>Corporate gatherings</h6>
+            <div class="profile">
+              <img class="profile-image" src="images/cater-2.jpg">
+            </div>
+            <div class="event-info">
+              <p>
+                Impress your clients and colleagues with 
+                our corporate catering service. Whether 
+                it's a business luncheon, product launch, 
+                or annual gala, our diverse range of cuisines 
+                and meticulously designed menus will elevate 
+                the dining experience, leaving a lasting 
+                impression on your guests.
+              </p>
+              <a href="mailto:info@kukuskitchen.com">
+                <button>Book Now</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <h6>Private Gatherings</h6>
+            <div class="profile">
+              <img class="profile-image" src="images/cater-1.jpg">
+            </div>
+            <div class="event-info">
+              <p>
+                For intimate gatherings with family and 
+                friends, our catering service brings the 
+                restaurant experience to your home. From 
+                milestone birthdays to anniversaries, our 
+                team ensures that every detail is taken 
+                care of, allowing you to relax and enjoy 
+                the moment while savoring exquisite dishes.
+              </p>
+            </div>
+            <a href="mailto:info@kukuskitchen.com">
+              <button>Book Now</button>
+            </a>
+          </div>
+        </div>
+        
+      
+        <div id="service-offer">
+          <h6>Service offerings</h6>
+          <div class="offer">
+            <h6>Menu Customization</h6>
+            <p>We understand that every event is unique. 
+              Our catering service includes personalized 
+              menu customization, ensuring that the culinary 
+              offerings align with your event theme and 
+              preferences.
+            </p>
+          </div>
+          <div class="offer">
+            <h6>Professional Staff</h6>
+            <p>
+              Our experienced and courteous staff members 
+              are dedicated to providing impeccable service. 
+              From setup to cleanup, we handle every aspect, 
+              allowing you to focus on enjoying your event.
+            </p>
+          </div>
+          <div class="offer">
+            <h6>
+              Quality Ingredients
+            </h6>
+            <p>
+              At Kuku's Kitchen, we prioritize quality. 
+              Our ingredients are carefully selected, with 
+              a focus on freshness and flavor. We source 
+              locally to support farmers and ensure 
+              sustainability.
+            </p>
+          </div>
+          <div class="offer">
+            <h6>
+              Culinary Expertise
+            </h6>
+            <p>
+              Led by Chef Kukua Johnson, our culinary team 
+              brings a wealth of expertise to every dish. 
+              From intricate appetizers to mouthwatering 
+              mains, our creations showcase a blend of 
+              innovation and tradition.
+            </p>
+          </div>
+          <div class="offer">
+            <h6>
+              Flexible Packages
+            </h6>
+            <p>
+              We offer flexible catering packages to accommodate 
+              various budgets and preferences. Whether you prefer 
+              a plated dinner, buffet-style, or interactive 
+              food stations, we tailor our services to suit your 
+              needs.
+            </p>
+          </div>
+          <p>
+            With Kuku's Kitchen catering, your event becomes a culinary 
+            masterpiece, leaving a lasting impression on your guests.
+          </p>
+        </div>
+        <a href="mailto:info@kukuskitchen.com">
+          <button>Book Now</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="personal-chef">
+      <!-- add animation transition to the highlight cards -->
+      <h5>Personal Chef</h5>
+      <p>
+        Indulge in the luxury of having Kuku's Kitchen's 
+        culinary expertise brought directly to your home 
+        with our personalized personal chef service. 
+        Crafted for intimate gatherings, this exclusive 
+        offering guarantees a dining experience that is 
+        not only exceptional but also tailored to your 
+        unique preferences.
+      </p>
+      
+      <div id="servicehighlights">
+        <div>
+          <h6>Service Highlights</h6>
+        </div>
+        <div id="servicetiles">
+          <div class="service-tile">
+            <h6>Menu Planning</h6>
+            <p>
+              Our personal chef service begins with a collaborative 
+              menu planning session. Chef Kukua and her team work 
+              closely with you to understand your culinary preferences, 
+              dietary requirements, and the atmosphere you want to create. 
+              From there, a bespoke menu is curated, ensuring that every dish 
+              aligns perfectly with your vision.
+            </p>
+          </div>
+          <div class="service-tile">
+            <h6>Culinary Excellence</h6>
+            <p>
+              Led by Chef Kukua Johnson, our culinary team brings a wealth 
+              of experience and creativity to your kitchen. From the preparation 
+              of exquisite appetizers to the flawless execution of the main course 
+              and delightful desserts, every element is crafted with 
+              precision and passion.
+            </p>
+          </div>
+          <div class="service-tile">  
+            <h6>Intimate Gatherings</h6>
+            <p>
+              Perfect for celebrations with close friends, family dinners, 
+              or romantic evenings, our personal chef service transforms 
+              your home into a private dining haven. Experience the joy 
+              of hosting without the stress of cooking and cleaning, 
+              allowing you to fully immerse yourself in the moment.
+            </p>
+          </div>
+          <div class="service-tile">  
+            <h6>Customization and Flexibility</h6>
+            <p>
+              Our personal chef service is highly customizable. 
+              Whether you have specific dietary restrictions, 
+              thematic preferences, or unique requests, Chef Kukua 
+              and her team are dedicated to accommodating your needs. 
+              We pride ourselves on delivering an experience that exceeds 
+              your expectations.
+            </p>
+          </div>
+          <div class="service-tile">  
+            <h6>Seamless Execution</h6>
+            <p>
+              From the setup of the kitchen to the presentation of each dish, 
+              our team ensures a seamless and enjoyable experience. You can 
+              relax and enjoy the company of your guests while Chef Kukua and 
+              her team take care of every culinary detail.<br>
+              Experience the pinnacle of culinary luxury with Kuku's Kitchen's 
+              personal chef service, where every meal is a masterpiece tailored 
+              exclusively for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=img-background id="cooking-class">
+      <div class="expect">
+        <h5>Cooking Classes</h5>
+        <p>
+          Embark on a culinary journey and unlock 
+          the secrets of gourmet cooking with Kuku's 
+          Kitchen's immersive cooking classes. Led by 
+          the renowned Chef Kukua Johnson, our classes 
+          offer a unique blend of education and enjoyment, 
+          catering to both beginners and seasoned home 
+          cooks.
+        </p>
+      </div>
+      <div class="expect">
+        <div>
+          <h6>What to Expect</h6>
+          <p>
+            <ul>
+              <li>
+                <h6>Diverse Culinary Themes</h6>
+                <p>
+                  Our cooking classes cover a diverse 
+                  range of culinary themes and techniques, 
+                  ensuring there's something for everyone. 
+                  From mastering the art of classic French 
+                  cuisine to exploring the vibrant flavors 
+                  of international dishes, each class is 
+                  thoughtfully designed to enhance your 
+                  culinary skills and broaden your palate.
+                </p>
+              </li>
+
+              <li>
+                <h6>Expert Guidance</h6>
+                <p>
+                  Under the expert guidance of Chef Kukua, 
+                  you'll learn not only the fundamentals of 
+                  cooking but also gain insights into the 
+                  finer nuances that elevate a dish. Chef 
+                  Kukua's passion for teaching and wealth of 
+                  culinary experience create an engaging and 
+                  enriching learning environment.
+                </p>
+              </li>
+              <li>
+                <h6>Hands-On Experience</h6>
+                <p>
+                  Experience the joy of hands-on learning as 
+                  you actively participate in the cooking 
+                  process. Our classes are structured to 
+                  provide you with practical skills that you 
+                  can immediately apply in your own kitchen. 
+                  Whether you're a novice or an experienced 
+                  home cook, you'll leave each class with 
+                  newfound confidence.
+                </p>
+              </li>
+
+              <li>
+                <h6>In-Person or Virtual Options</h6>
+                <p>
+                  Choose between attending classes in our 
+                  well-equipped kitchen or joining virtually 
+                  from the comfort of your home. Our flexible 
+                  approach allows you to tailor your learning 
+                  experience to suit your preferences and 
+                  schedule.
+                </p>
+              </li>
+
+              <li>
+                <h6>Community and Collaboration</h6>
+                 <p>
+                  Our cooking classes foster a sense of 
+                  community and collaboration. Connect with 
+                  fellow food enthusiasts, share your culinary 
+                  experiences, and celebrate the joy of creating 
+                  delicious meals together. Whether in person or 
+                  online, our classes provide a supportive 
+                  environment for culinary exploration.
+                </p>
+              </li>
+
+              <li>
+                <h6>Culinary Passion Unleashed</h6>
+                <p>
+                  At Kuku's Kitchen, we believe that cooking is 
+                  not just a skill but a journey of passion. 
+                  Join our cooking classes, and let Chef Kukua 
+                  inspire and guide you towards unleashing your 
+                  culinary creativity.                
+                </p>
+              </li>
+            </ul>
+            Embark on a culinary adventure with Kuku's Kitchen, 
+            where every class is an opportunity to learn, create, 
+            and savor the art of gourmet cooking.
+          </p>
+        </div>
+
+        <div>
+          <h6>Sign Up for Cooking Classes</h6>
+
+          <button id="openFormButton">Sign Up</button>
+
+          <div id="signupFormOverlay">
+            <div id="signupFormContainer">
+              <span id="closeFormButton">&times;</span>
+              <form action="/submit-cooking-class-form" method="post">
+                <!-- Your form fields go here -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="experience">Cooking Experience:</label>
+                <select id="experience" name="experience" required>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    
+        <!-- Contact Us Section -->
+        <section class="contact-section" id="contacts">
+      <div class="contact-info">
+        <div>
+          <h5 class="subtitle">
+            Ready to Serve You.
+          </h5>
+        </div>
+        <div>
+          <p>
+            If you have any inquiries, 
+            wish to book our catering services, 
+            or simply want to share your culinary passion, 
+            please feel free to get in touch with us. 
+            Our team is ready to assist you on your culinary journey.
+          </p>
+        </div>
+      </div>
+
+      <div id="contact-form" class="contact-info">
+        <div>
+          <h5>Contact Us</h5>
+        </div>
+        
+        <div>
+          <form action="your-server-script.php" method="post" autocomplete="on">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer Section -->
     <footer>
       <div>
-        &copy;2023 copyright Kuda M&rsquo;ndau
+        &copy;2023 copyright Kuku's Kitchen
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/2-2.png" 
+          alt="Kuku's Kitchen logo">
+        </a>
       </div>
       <div>
         Designed by K.M. for D4C
       </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
+        </ul>
+        </div>
+      </nav> 
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" 
+    class="hidden">
+    Back to Top
+  </button>
   </body>
 </html>

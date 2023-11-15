@@ -1,57 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       Kuku's Kitchen | Contact Us
     </title>
+    <!-- Add Metadata here -->
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+    <link rel="stylesheet" type="text/css" href="custom-style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <script src="script.js"></script>
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/2-2.png" alt="Kuku's Kitchen Logo">
+          </a>
+        </div>
+        <div class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</li>
-          <li><a href="service.html">Services</li>
-          <li><a href="recipe.html">Receipe Collection</li>
-          <li><a href="contact.html">Contact Us</li>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
         </ul>
+        </div>
       </nav>
+      
     </header>
 
     <!-- Contact Us Section -->
-    <section id="contact">
-      <h5>Ready to Serve You. </h5>
-      <p>
-        If you have any inquiries, 
-        wish to book our catering services, 
-        or simply want to share your culinary passion, 
-        please feel free to get in touch with us. 
-        Our team is ready to assist you on your culinary journey.
-      </p>
-
-      <!-- Add a Cooking Class Sign Up Form -->
-
-      <form action="your-server-script.php" method="post" autocomplete="on">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" required>
-        <label for="comments">Comments</label>
-        <textarea id="comments" name="comments" rows="4" required></textarea>
-        <input type="submit" value="Submit">
-      </form>
+    <section class="contact-section" id="contacts">
+      <div class=background-img-div id="contact-information">
+        <div id="contact-information-container">
+          <h1>Contact Us</h1>
+          <h6>Get in Touch</h6>
+          <p>We'd love to hear from you! Whether you have questions about our services, want to collaborate, or just want to say hello, feel free to reach out using the contact form or other contact details below.</p>
+      
+          <h6>Contact Form</h6>
+          <p>Please fill out the form below, and we'll get back to you as soon as possible.</p>
+      
+          <div>
+            <form action="your-server-script.php" method="post" autocomplete="on">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" required>
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="comments" rows="4" required></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+      
+          <h6>Contact Information</h6>
+          <p><a href="mailto:info@kukuskitchen.com">Email: info@kukuskitchen.com</a><br>
+          Phone: +123 456 7890<p>
+          
+          <h6>Location</h6>
+          <p>Kuku's Kitchen Headquarters<br>
+          123 Culinary Street<br>
+          Tasteville, Cookland</p>
+          
+          <h6>Social Media</h6>
+          <p>Connect with us on social media for the latest updates and culinary inspiration:
+            <ul>
+              <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+              <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+          </p>
+          <h6>Business Hours</h6>
+          <p>
+            Monday to Friday: 9:00 AM - 6:00 PM<br>
+            Saturday: 10:00 AM - 4:00 PM<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+      <div id="map">
+        <h6>Where to Find Us</h6>
+        <iframe src="https://www.google.com/maps/embed?pb=your_map_parameters" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="contact-information" id="faq">
+        <h6>We're Here for You</h6>
+        <p>Your feedback is important to us, and we're committed to providing excellent service. Expect a response within 24 hours during business days.</p>
+        
+        <h6>Frequently Asked Questions</h6>
+        <p>Q: How can I book your catering services?<br>
+        A: Booking our catering services is easy! Simply fill out the contact form, and we'll guide you through the process.</p>
+        
+        <p>Q: Do you cater to dietary restrictions?<br>
+        A: Absolutely! Let us know about any dietary requirements when you contact us, and we'll tailor our services to meet your needs.</p>
+        
+        <p>Q: Can I visit your kitchen?<br>
+        A: While our kitchen is the heart of Kuku's Kitchen, it's not open to the public. However, we're happy to showcase our culinary creations through our services.</p>
+        
+        <h6>Your Culinary Journey Starts Here</h6>
+        <p>Thank you for considering Kuku's Kitchen for your culinary needs. We look forward to the opportunity to create memorable experiences for you and your guests.</p>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
       <div>
-        &copy;2023 copyright Kuda M&rsquo;ndau
+        &copy;2023 copyright Kuku's Kitchen
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/2-2.png" 
+          alt="Kuku's Kitchen logo">
+        </a>
       </div>
       <div>
         Designed by K.M. for D4C
       </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
+        </ul>
+        </div>
+      </nav> 
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" 
+    class="hidden">
+      Back to Top
+    </button>
   </body>
 </html>

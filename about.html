@@ -1,56 +1,597 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       Kuku's Kitchen | About Us
     </title>
+    <!-- Add Metadata here -->
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+    <link rel="stylesheet" type="text/css" href="custom-style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <script src="script.js"></script>
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/2-2.png" 
+            alt="Kuku's Kitchen Logo">
+          </a>
+        </div>
+        <div class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</li>
-          <li><a href="service.html">Services</li>
-          <li><a href="recipe.html">Receipe Collection</li>
-          <li><a href="contact.html">Contact Us</li>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
         </ul>
-      </nav>
+        </div>
+      </nav>    
     </header>
-    <section id="hero"></section>
-    <section id="about"></section>
     
-    <!-- Contact Us Section -->
-    <section id="contact">
-      <h5>Ready to Serve You. </h5>
-      <p>
-        If you have any inquiries, 
-        wish to book our catering services, 
-        or simply want to share your culinary passion, 
-        please feel free to get in touch with us. 
-        Our team is ready to assist you on your culinary journey.
-      </p>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div>
+        <div>
+          <h1>
+            Faith, Integrity and a Passion 
+            for Quality
+          </h1>
+          <p>
+            Crafting a symphony of taste that resonates 
+            with our commitment to excellence.
+          </p>
+        </div>
+        <div>
+          <a href="#more-info"><button>
+            Learn More
+          </button></a>
+        </div>
+      </div>
 
-      <form action="your-server-script.php" method="post" autocomplete="on">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" required>
-        <label for="comments">Comments</label>
-        <textarea id="comments" name="comments" rows="4" required></textarea>
-        <input type="submit" value="Submit">
-      </form>
+      <div id="hero1" class="hero-div">
+        <div id="hero2" class="hero-div">
+          <div id="hero3" class="hero-div">
+            <div id="hero4" class="hero-div">
+              <div id="slideshow" class="slideshow">
+                <img id="hero-image" src="images/chicken-2.jpg" class="slide active">
+                <img id="hero-image" src="images/cook-1.jpg" class="slide">
+                <img id="hero-image" src="images/fish-1.jpg" class="slide">
+                <div id="dot-container">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="img-background" id="introduction">
+      <div class="story-div" id="intro">
+        <h5>Who We Are</h5>
+        <p>
+          At Kuku's Kitchen, we believe in 
+          the magic of food to create unforgettable 
+          moments. Our culinary journey is a testament 
+          to our dedication to the art of crafting 
+          exceptional dishes that touch the heart 
+          and tantalize the taste buds.
+        </p>
+      </div>
+      <div id="story-vision">
+        <div class="story-div" id="story">
+          <h5>Our Story</h5>
+          <p>
+            Kuku's Kitchen was founded with a vision of 
+            sharing the joy of exquisite food with the world. 
+            Our journey began in a humble kitchen, driven by a 
+            passion for culinary creativity.
+          </p>
+          <p>
+            Along the way, we've achieved numerous milestones, 
+            from catering intimate gatherings to crafting gourmet 
+            meals for grand celebrations. Each experience has 
+            shaped our culinary identity.
+          </p>
+        </div>
+        <div class="story-div" id="vision-mission">
+          <h5>Our Philosophy</h5>
+          <h6>Culinary Vision</h6>
+          <p>
+            Our vision is to be the 
+            hallmark of culinary excellence, known for 
+            delivering extraordinary dining experiences.
+          </p>
+          <h6>Culinary Mission</h6>
+          <p>
+            We are guided by the 
+            values of quality, innovation, and service. 
+            Our mission is to create unforgettable moments 
+            through the power of food.
+          </p>
+        </div>
+      </div>
+    </section>
+        
+    <section id="service">
+      <div id="services">
+        <h5>
+          What We Do
+        </h5>
+        <p>
+          At Kuku's Kitchen, we pride ourselves 
+          on curating unforgettable culinary 
+          experiences tailored to your preferences.<br> 
+          Our event catering services bring a touch 
+          of sophistication to any occasion, offering 
+          a diverse menu that includes our exotic 
+          "Mango Tango Salmon" and the decadent 
+          "Triple Chocolate Delight."<br> 
+          These signature dishes showcase our commitment to culinary 
+          excellence, combining unique flavors and 
+          premium ingredients to elevate your dining 
+          experience.<br>
+          Whether you're hosting a special 
+          event or enjoying a personal chef service, 
+          each dish is expertly crafted to delight your 
+          palate and leave a lasting impression.<br> 
+          Join our cooking classes to explore the 
+          secrets behind these culinary gems and bring 
+          the joy of gourmet cooking to your own kitchen.
+        </p>
+
+        <a href="service.html">
+          <button>
+            Learn More
+          </button>
+        </a>
+      </div>
+      <div class="black-div" id="team">
+        <h5>Meet the Team</h5>
+        <div class="background-img-div" id="team-div">
+          <div class="team-info">
+            <p>
+              Meet our passionate team composed of culinary geniuses and operations personnel, 
+              each with a unique expertise and a shared love for 
+              creating culinary masterpieces.
+            </p>
+          </div>
+          <div class="category">
+            <div class="team-info">
+              <h6>Culinary Department</h6>
+            </div>
+            <div class="the-team">
+              <div class="staff-card">
+                <div class="staff-card-title">
+                  <h6>Head Chef and Founder</h6>
+                </div>
+                <div class="profile">
+                    <img class="profile-image" src="images/chef-kukua.webp" 
+                    alt="Chef Kukua Johnson's picture">
+                </div>
+                <div class="profile-info">
+                  <p class="name">Kukua Johnson</p>
+                  <p>Specialization: Fusion Cuisine</p>
+                </div>
+              </div>
+
+              <div class="staff-card">
+                <div class="staff-card-title">
+                  <h6>
+                    Sous Chef
+                  </h6>
+                </div>
+                <div class="profile">
+                  <img class="profile-image" src="images/sous-chef-Peter Anderson.jpg" 
+                  alt="Chef Peter Anderson's picture">
+                </div>
+                <div class="profile-info">
+                  <p class="name">Peter Anderson</p>
+                  <p>Specialization: Indian and Mediterranean Cuisine</p>
+                </div>
+              </div>
+
+              <div class="staff-card">
+                <div class="staff-card-title">
+                  <h6>
+                    Pastry Chef
+                  </h6>
+                </div>
+                <div class="profile">
+                  <img class="profile-image" src="images/pastry-chef-Isabella.jpg" lt="Chef Kukua Johnson's picture">
+                </div>
+                <div class="profile-info">
+                  <p class="name">Isabella Rodriguez</p>
+                  <p>Specialization: Artisanal Pastries and Confections</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="category">
+            <div class="team-info">
+              <h6>Operations Department</h6>
+            </div>
+            <div class="the-team">
+              <div class="staff-card">
+                <h6>Catering Manager</h6>
+                <div>
+                  <img class="profile-image" src="images/Head Chef-1.jpg" alt="Chef Kukua Johnson's picture">
+                </div>
+                <div class="profile-info">
+                  <p class="name">Alex Thompson</p>
+                  <p>Manages Events and Client Relations</p>
+                  <p>Specialization: Event Planning</p> 
+                </div>
+              </div>
+                
+              <div class="staff-card">
+                <div class="staff-card-title">
+                  <h6>
+                    Event Co-ordinator 
+                  </h6>
+                </div>
+                <div class="profile">
+                  <img class="profile-image" src="images/Head Chef-1.jpg" alt="Chef Kukua Johnson's picture">
+                </div>
+                <div class="profile-info">
+                  <p class="name">Logan Carter</p>
+                  <p>Assists in:
+                    <ul>
+                      <li>Event Planning</li>
+                      <li>Co-ordination</li>
+                      <li>Managing event logistics and details</li></ul></p>
+                  <p>Specialization: Event Co-ordination</p>
+                </div>
+              </div>
+
+              <div class="staff-card">
+                <div class="staff-card-title">
+                  <h6>
+                    Marketing Co-ordinator
+                  </h6>
+                </div>
+                <div class="profile">
+                  <img class="profile-image" src="images/Head Chef-1.jpg" alt="Chef Kukua Johnson's picture">
+                </div>
+                <div class="profile-info">
+                  <p class="name">Sophia Brown</p>
+                  <p>
+                    <ul>
+                      <li>Develops and executes marketing strategies</li>
+                      <li>Manages online and offline marketing campaigns</li>
+                    </ul>
+                  </p>
+                  <p>Specialization: Marketing and Branding</p>
+                </div>
+              </div>
+                
+              <div class="staff-card">
+                <div class="staff-card-title">
+                  <h6>
+                      Administrative Assistant
+                  </h6>
+                </div>
+                <div class="profile">
+                  <img class="profile-image" src="images/Head Chef-1.jpg" alt="Chef Kukua Johnson's picture">
+                </div>
+                <div class="profile-info">
+                  <p class="name">Lisa Moloi</p>
+                  <p>Provides administrative support
+                    Manages office tasks and coordination
+                  </p>
+                  <p>Specialization: Administrative Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="team-info">
+            <h6>
+              Culinary Leadership
+            </h6>
+          </div>
+          <div class="team-info">
+            <p>
+              Culinary Director Chef Kukua Johnson stands 
+              as the visionary leader at the helm of Kuku's 
+              Kitchen. With a storied career marked by a 
+              passion for culinary arts, Chef Kukua brings 
+              a wealth of experience and a dedication to 
+              innovation. From early culinary explorations 
+              to mastering diverse cuisines in renowned 
+              kitchens globally, she has cultivated a 
+              distinctive style that harmonizes tradition 
+              with avant-garde trends.
+            </p> 
+                
+            <p>As a pioneer in the 
+               culinary landscape, Chef Kukua is committed 
+               to pushing boundaries and fostering a creative 
+               environment. Her leadership philosophy emphasizes 
+               collaboration, mentorship, and a profound 
+               appreciation for the art of cooking. Under her 
+               guidance, Kuku's Kitchen crafts culinary 
+               experiences that transcend the ordinary, telling 
+               stories through curated menus and engaging the 
+               senses in immersive dining events. Chef Kukua Johnson's influence is not only felt in the kitchen but is a driving force behind the culinary excellence that defines Kuku's Kitchen. Her commitment to culinary innovation ensures each dish is a journey of flavors, textures, and unparalleled enjoyment.
+            </p>
+          </div>
+        </div>  
+      
+        <div class="testimony">
+          <h6>Client Testimonials</h6>
+          <div id="client-testimonies">
+            <div class="client-card">
+              <div class="client-pic">
+                <img class="client-image" src="images/Emily S.jpg">
+              </div>
+              <div class="client-comment">
+                <p>
+                  "Kuku's Kitchen is a culinary gem. 
+                  The food was not only delicious but 
+                  also beautifully presented." - <span>Emily S.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-pic">
+                <img class="client-image" src="images/John D.jpg">
+              </div>
+              <div class="client-comment">
+                <p>
+                  "The personal chef service was a game-changer 
+                  for our special occasion. We felt like royalty 
+                  in our own home!" - <span>John D.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-pic">
+                <img class="client-image" src="images/Sarah MM.jpg">
+              </div>
+              <div class="client-comment">
+                <p>
+                  "I never thought I could cook restaurant-quality 
+                  meals until I took a cooking class with Kuku's Kitchen. 
+                  Highly recommended!" - <span>Sarah M.</span>
+                </p>
+              </div>
+            </div>
+          </div> 
+          
+          <div id="client-testimonies">
+            <div class="client-card">
+              <div class="client-pic">
+                <img class="client-image" src="images/Emily S.jpg">
+              </div>
+              <div class="client-comment">
+                <p>
+                  "Kuku's Kitchen is a culinary gem. 
+                  The food was not only delicious but 
+                  also beautifully presented." - <span>Emily S.</span>
+                </p>
+              </div>
+            </div>
+
+          <div class="client-card">
+              <div class="client-pic">
+                <img class="client-image" src="images/John D.jpg">
+              </div>
+              <div class="client-comment">
+                <p>
+                  "The personal chef service was a game-changer 
+                  for our special occasion. We felt like royalty 
+                  in our own home!" - <span>John D.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-pic">
+                <img class="client-image" src="images/Sarah MM.jpg">
+              </div>
+              <div class="client-comment">
+                <p>
+                  "I never thought I could cook restaurant-quality 
+                  meals until I took a cooking class with Kuku's Kitchen. 
+                  Highly recommended!" - <span>Sarah M.</span>
+                </p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <a href="service.html">
+        <button>
+          Check out Our Services
+        </button>
+      </a>
+    </section>
+    
+    <section class="img-background" id="more-info">
+      <div class=team-info id="awards">
+        <h6>Awards and Recognition</h6>
+        <p>Kuku's Kitchen is honored to have received 
+          the prestigious "Golden Spoon Award" for 
+          culinary excellence and innovation in 2022. 
+          Our commitment to pushing culinary boundaries 
+          has been acknowledged by industry experts.<br>
+          In addition to the "Golden Spoon Award," 
+          Kuku's Kitchen has been recognized with the 
+          "Epicurean Masterpiece Award" for consistently 
+          delivering exceptional and inventive culinary 
+          creations. <br>
+          Our dedication to quality has earned us the 
+          "Excellence in Catering" award from the Culinary 
+          Guild. As a testament to our sustained excellence, 
+          we proudly display the "Culinary Innovation Pioneer" 
+          accolade, acknowledging our role as a trailblazer 
+          in the culinary industry.<br> 
+          These awards, along with our more than five years 
+          of culinary mastery, reflect Kuku's Kitchen's 
+          enduring commitment to setting the standard for 
+          gastronomic excellence.
+        </p>
+      </div>
+
+      <div class="team-info" id="expertise">
+        <h6>Culinary Expertise</h6>
+        <p>In the realm of culinary expertise, Kuku's Kitchen 
+          boasts a diverse and skilled team led by 
+          Chef Kukua Johnson. With a distinct flair for 
+          fusion cuisine, Chef Kukua brings innovation to 
+          the table, infusing diverse flavors to create a 
+          unique culinary experience.<br> 
+          Our Sous Chef is a master of Mediterranean and 
+          Indian cuisine, skillfully preparing dishes that 
+          transport you to the heart of these rich culinary 
+          traditions.<br> 
+          Complementing our savory offerings, our 
+          Pastry Chef is an artisan, crafting delightful 
+          pastries and confections that are nothing short 
+          of heavenly.<br> 
+          Together, our culinary experts bring 
+          a symphony of flavors and techniques to Kuku's Kitchen, 
+          ensuring an unparalleled dining adventure for 
+          our valued patrons.</p>
+      </div>
+
+      <div class="team-info" id="quality">
+        <h6>Sustainability and Quality</h6>
+        <p>In our commitment to excellence, Kuku's Kitchen 
+          places a strong emphasis on sustainability 
+          and quality. Our ingredients are meticulously 
+          selected, with a focus on using high-quality, 
+          organic produce.
+          We source the majority of our ingredients 
+          locally, not only to ensure freshness but 
+          also to support local farmers and foster a 
+          sense of community. Additionally, our dedication 
+          to sustainable practices extends to our kitchen 
+          gardeners, who cultivate fresh, seasonal produce 
+          that adds an authentic touch to our culinary creations.<br> 
+          By prioritizing quality and sustainability, 
+          we aim to provide not just a meal but a conscientious 
+          dining experience that aligns with our values 
+          and resonates with our clients.</p>
+      </div>
+        
+      <div class="team-info" id="event">
+        <h6>Events</h6>
+        <p>
+          At Kuku's Kitchen, we specialize in 
+          transforming a variety of events into 
+          unforgettable culinary experiences. 
+          For elegant weddings, our team crafts bespoke 
+          menus that reflect the unique love story of 
+          each couple.<br> 
+          Our expertise extends to corporate events, where we 
+          seamlessly blend professionalism with gastronomic 
+          delight, leaving a lasting impression on clients 
+          and colleagues alike. 
+          Intimate private parties become culinary celebrations 
+          as we curate menus tailored to the preferences 
+          of hosts and their guests, creating an atmosphere 
+          of warmth and joy.<br> 
+          Whether it's a grand wedding, a corporate gathering, 
+          or a cozy private affair, Kuku's Kitchen brings a 
+          distinctive touch to each event, ensuring that 
+          the culinary journey is as memorable as the occasion itself.
+        </p> 
+      </div>
+      <a href="mailto:info@kukuskitchen.com">
+        <button>
+          Get In Touch
+        </button>
+      </a>
+    </section>
+    
+        <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <div>
+          <h5 class="subtitle">
+            Ready to Serve You.
+          </h5>
+        </div>
+        <div>
+          <p>
+            Ready to elevate your event with exquisite 
+            catering? Contact us now to inquire about 
+            our services or request a personalized quote. 
+            Let Kuku's Kitchen turn your culinary dreams into 
+            a delicious reality!
+          </p>
+        </div>
+      </div>
+
+      <div id="contact-form" class="contact-info">
+        <div>
+          <h5>Contact Us</h5>
+        </div>
+        
+        <div>
+          <form action="your-server-script.php" method="post" autocomplete="on">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer Section -->
     <footer>
       <div>
-        &copy;2023 copyright Kuda M&rsquo;ndau
+        &copy;2023 copyright Kuku's Kitchen
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/2-2.png" 
+          alt="Kuku's Kitchen logo">
+        </a>
       </div>
       <div>
         Designed by K.M. for D4C
       </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
+        </ul>
+        </div>
+      </nav> 
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" 
+    class="hidden">
+    Back to Top
+  </button>
   </body>
 </html>

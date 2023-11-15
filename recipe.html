@@ -1,28 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       Kuku's Kitchen | Recipe Collection
     </title>
+    <!-- Add Metadata here -->
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+    <link rel="stylesheet" type="text/css" href="custom-style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <script src="script.js"></script>
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/2-2.png" alt="Kuku's Kitchen Logo">
+          </a>
+        </div>
+        <div class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</li>
-          <li><a href="service.html">Services</li>
-          <li><a href="recipe.html">Receipe Collection</li>
-          <li><a href="contact.html">Contact Us</li>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
         </ul>
+        </div>
       </nav>
+      
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-      <!-- Include a catchy Headline and paragraph to introduce the page -->
+      <div id="hero-content">
+        <div>
+          <h1 class="headline">
+            Simple Recipes to
+            Inspire Your Inner Chef.
+          </h1>
+          <p>
+            Discover a treasure trove of 
+            handcrafted recipes, each carefully 
+            curated to ignite your taste buds and 
+            inspire your inner chef. 
+          </p>
+        </div>
+        <div>
+          <button>
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div id="hero1" class="hero-div">
+        <div id="hero2" class="hero-div">
+          <div id="hero3" class="hero-div">
+            <div id="hero4" class="hero-div">
+              <div id="slideshow" class="slideshow">
+                <img id="hero-image" src="images/chicken-2.jpg" class="slide active">
+                <img id="hero-image" src="images/cook-1.jpg" class="slide">
+                <img id="hero-image" src="images/fish-1.jpg" class="slide">
+                <div id="dot-container">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     
     <!-- Recipe Section-->
@@ -30,50 +88,244 @@
 
       <!-- Starters Section -->
       <section id="starters" class="category">
-        <!-- Starters x3 Recipe Cards -->
+        <div class="recipe-info">
+          <h5 class="subtitle">
+            Delectable Starter Dishes
+          </h5>
+          <p>
+            Begin your culinary journey with our exquisite selection of starters. Perfect for whetting your appetite, our starters are crafted to delight your taste buds with a burst of flavors. From the freshness of Caprese Salad Skewers to the creamy indulgence of Spinach and Artichoke Dip, each starter is a prelude to a memorable dining experience. 
+          </p>
+          <div class="recipe-container">
+            <div>
+              <p>
+                Elevate your gatherings with these delightful appetizers that set the stage for the culinary symphony to follow.
+              </p>
+            </div>
+          </div class="recipe-card-container">
+            
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/starter-recipe-1.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Caprese Salad Skewers</h5>
+                 <p>A delightful ensemble of vibrant cherry tomatoes, fresh mozzarella, and aromatic basil leaves, elegantly skewered and drizzled with a balsamic glaze. This classic Italian-inspired starter is a visual and flavorful treat that captures the essence of Mediterranean simplicity.</p>
+                <a href="recipe1.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div><br>
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/starter-recipe-2.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Spinach and Artichoke Dip</h5>
+                 <p>Dive into a luscious blend of creamed spinach, tender artichoke hearts, and a harmonious mix of cheeses. Served warm, this indulgent dip is a crowd-pleaser, perfect for scooping up with crispy tortilla chips, offering a symphony of textures and savory goodness.</p>
+                <a href="recipe2.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div><br>
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/starter-recipe-3.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Bruschetta with Tomato and Basil</h5>
+                 <p>Experience the essence of summer with this traditional bruschetta. Toasted bread slices generously topped with a medley of diced tomatoes, aromatic fresh basil, minced garlic, and a drizzle of extra virgin olive oil. Each bite is a burst of freshness and Mediterranean charm.</p>
+                <a href="recipe3.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Main Dishes Section -->
       <section id="main-dishes" class="category">
-        <!-- Main Dishes x3 Recipe Cards -->
+        <div class="recipe-info">
+          <h5 class="subtitle">
+            Main Dish Recipes
+          </h5>
+          <p>
+            Savor the heart of our culinary offerings with our diverse array of main courses. Whether you prefer the comforting richness of Chicken Alfredo Pasta, the vibrant medley of flavors in Vegetable Stir-Fry, or the succulent perfection of Grilled Salmon with Lemon-Dill Sauce, our mains promise a journey through taste and texture.
+          </p>
+          <div class="recipe-container">
+            <div>
+              <p>
+                Immerse yourself in a world of culinary excellence, where each dish is a testament to our commitment to crafting unforgettable dining experiences.
+              </p>
+            </div>
+          </div class="recipe-card-container">
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/main-recipe-1.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Chicken Alfredo Pasta</h5>
+                 <p>Immerse yourself in a comforting blend of grilled chicken breast and al dente fettuccine pasta, generously coated in a velvety Alfredo sauce. This classic Italian-American dish marries savory grilled flavors with the creamy richness of the Alfredo, creating a satisfying and indulgent main course.</p>
+                <a href="recipe4.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div><br>
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/main-recipe-2.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Vegetable Stir-Fry</h5>
+                 <p>Embark on a journey of flavors and colors with this vibrant vegetable stir-fry. Crisp broccoli, bell peppers, carrots, and snap peas dance in a savory soy-ginger sauce, creating a symphony of textures and tastes. Served over a bed of fluffy rice, it's a wholesome and satisfying dish.</p>
+                <a href="recipe5.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div><br>
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/main-recipe-3.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Grilled Salmon with Lemon-Dill Sauce</h5>
+                 <p>Elevate your dining experience with succulent grilled salmon fillets, perfectly seasoned and adorned with a bright and zesty lemon-dill sauce. The flaky perfection of the salmon paired with the citrusy freshness of the sauce makes for a delightful and elegant main course.</p>
+                <a href="recipe6.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Desserts Section-->
-      <section id="desserts" class="category">
-        <!-- Desserts x3 Recipe Cards -->
+      <section id="desserts" class="category">  
+        <div class="recipe-info">
+          <h5 class="subtitle">
+            Mouthwatering Desserts
+          </h5>
+          <p>
+           Indulge your sweet tooth with our decadent dessert creations. From the irresistible allure of Chocolate Lava Cake to the classic elegance of Strawberry Cheesecake and the timeless charm of Tiramisu, our desserts are a symphony of sweetness. Each bite is a celebration of the artistry and passion we infuse into our culinary creations. 
+          </p>
+          <div class="recipe-container">
+            <div>
+              <p>
+                Conclude your meal on a sweet note with our carefully crafted desserts that leave a lasting impression.  
+              </p>
+            </div>
+          </div class="recipe-card-container">
+            
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/dessert-recipe-1.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Chocolate Lava Cake</h5>
+                 <p>Indulge in the decadence of a warm and gooey chocolate lava cake. As you cut through the outer layer, a river of molten chocolate flows, creating a heavenly fusion of rich, velvety cocoa. Served with a scoop of vanilla ice cream, it's a chocolate lover's dream.</p>
+                <a href="recipe7.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div><br>
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/dessert-recipe-2.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Strawberry Cheesecake</h5>
+                 <p>Delight your senses with a creamy and velvety cheesecake, its luscious texture complemented by a layer of fresh strawberries and a glossy strawberry glaze. The combination of tangy cream cheese and sweet strawberries creates a harmonious symphony of flavors.</p>
+                <a href="recipe8.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div><br>
+            <div class="recipe-card">
+              <div class="recipe-img">
+                <img class="recipe-image" src="images/dessert-recipe-3.jpg">
+              </div>
+              <div class="recipe-card-info">
+                 <h5>Tiramisu</h5>
+                 <p>Transport yourself to the streets of Italy with the classic Tiramisu. Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder, create a heavenly dessert. Each bite is a balance of coffee-infused richness and the delicate sweetness of mascarpone.</p>
+                <a href="recipe9.html">
+                  <button>See More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
-
+    
     <!-- Contact Us Section -->
-    <section id="contact">
-      <h5>Ready to Serve You. </h5>
-      <p>
-        If you have any inquiries, 
-        wish to book our catering services, 
-        or simply want to share your culinary passion, 
-        please feel free to get in touch with us. 
-        Our team is ready to assist you on your culinary journey.
-      </p>
+    <section class="contact-section" id="contact">
+      <div class="contact-info">
+        <div>
+          <h5 class="subtitle">
+            Ready to Serve You.
+          </h5>
+        </div>
+        <div>
+          <p>
+            If you have any inquiries, 
+            wish to book our catering services, 
+            or simply want to share your culinary passion, 
+            please feel free to get in touch with us. 
+            Our team is ready to assist you on your culinary journey.
+          </p>
+        </div>
+      </div>
 
-      <form action="your-server-script.php" method="post" autocomplete="on">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" required>
-        <label for="comments">Comments</label>
-        <textarea id="comments" name="comments" rows="4" required></textarea>
-        <input type="submit" value="Sign Up">
-      </form>
+      <div id="contact-form" class="contact-info">
+        <div>
+          <h5>Contact Us</h5>
+        </div>
+        
+        <div>
+          <form action="your-server-script.php" method="post" autocomplete="on">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
       <div>
-        &copy;2023 copyright Kuda M&rsquo;ndau
+        &copy;2023 copyright Kuku's Kitchen
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/2-2.png" 
+          alt="Kuku's Kitchen logo">
+        </a>
       </div>
       <div>
         Designed by K.M. for D4C
       </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="recipe.html">Recipe Collection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Feedback</a></li>
+        </ul>
+        </div>
+      </nav> 
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" 
+    class="hidden">
+    Back to Top
+    </button>
   </body>
 </html>

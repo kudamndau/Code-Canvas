@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Kaushan+Script&family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  font-size: 18px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #a41060, #efecec, #a1e4ca);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0; 
+  margin: 0; 
+}
+h1 {
+  font-family: Kaushan Script, cursive;
+  color: #a1e4ca;
+  text-shadow: 3px 3px 6px #a41060;
+  font-size: 70px;
+}
+
+h5 {
+  font-family: Alkatra, serif;
+  color: #a41060;
+  text-shadow: 2px 2px 4px #000;
+  font-size: 28px;
+  text-align: center;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  color: #000;
+}
+
+section, 
+header, 
+footer,
+nav {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center; /* Vertically center the logo and links */
+  justify-content: space-between;
+}
+
+button {
+  background-color: #a41060;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-left: auto;
+  color: #efecec;
+  display: block; /* Ensures buttons are treated as block-level elements */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: auto; /* Center vertically */
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #a1e4ca;
+  color: #000;
+  box-shadow: 5px 5px 10px 
+  rgba(0, 0, 0, 0.5);
+  transition: all 0.15s;
+}
+
+button:active {
+  background-color: #efecec;
+  box-shadow: none;
+  transition: all 0.15s;
+}
+
+header {
+  background-color: #000;
+  }
+
+nav {
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.navbar li {
+  margin-right: 20px; /* Adjust as needed to space out the links */
+}
+
+.navbar a {
+  color: #efecec; /* Beige font color */
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.navbar a:hover {
+  color: #a1e4ca; /* Change font color on hover */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Vertically center the logo within the logo div */
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+ }
+
+ .logo img {
+  width: 100%;
+  cursor: pointer;
+ }
+
+ .logo img:hover {
+  transform: scale(1.1);
+  transition: 0.15s;
+ }
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  background-color: #000;
+}
+
+#hero-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+#hero p {
+  color: #efecec;
+}
+
+
+.hero-div {
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px 
+  rgba(0, 0, 0, 0.5);
+}
+
+#hero1,
+#hero2,
+#hero3,
+#hero4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero1 {
+  background-color: #a41060;
+  flex: 1;
+  height: 100vh;
+}
+
+#hero2,
+#hero3,
+#hero4 {
+  width: 95%;
+  height: 98%;
+}
+
+#hero2 {
+  background-color: #a1e4ca;
+}
+
+#hero3 {
+  background-color: #efecec;
+}
+
+#hero4 {
+  background-color: rgb(99, 99, 99);
+}
+
+#hero-image,
+#slideshow {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+/* ... previous CSS rules ... */
+
+.slideshow {
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+#dot-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px; /* Adjust this value to control the vertical position of the dots */
+  width: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px; /* Adjust the margin to control the spacing between dots */
+  background-color: #a41060;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #a1e4ca; /* Change the active dot color as needed */
+}
+
+.contact-section {
+  background-color: #a1e4ca;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+#faq h6 {
+  color: #a41060;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#contact-info div,
+#contact-form div {
+  width: 100%;
+}
+
+#contact-information {
+  padding: 10px;
+  margin: 10px;
+  background-image: url(images/class-3.jpg);
+}
+
+#contact-information p {
+  color: #efecec;
+}
+
+#contact-information h6 {
+  color: #a1e4ca;
+}
+
+#contact-information-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#contact-information-container a {
+  text-decoration: none;
+  color: #a1e4ca;
+  font-weight: 400;
+}
+
+form {
+  background: #efecec; /* Set the form background color */
+  padding: 20px 20px;
+  border-radius: 25px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+#contacts form {
+  width: 60%;
+  margin-right: auto;
+}
+
+form:hover {
+  background-color: #e0e0e0; /* Change the background color when hovering */
+  box-shadow: 5px 5px 10px rgba(99, 99, 99, 0.50); /* Add a box shadow effect */
+  transform: scale(1.02); /* Enlarge the form slightly on hover */
+  transition: background-color 0.15s, transform 0.15s; /* Add transitions for other properties */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+input[type="submit"] {
+  background: #a41060; /* Set the submit button background color */
+  color: #efecec; /* Set text color on the submit button */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.15s;
+}
+
+input[type="submit"]:hover {
+  background: #a1e4ca;
+  color: #000;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:active {
+  background-color: #efecec;
+  box-shadow: none;
+  transition: all 0.15s;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #efecec;
+  padding: 10px 15px;
+  font-size: 10px;
+ }
+
+footer .logo {
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+}
+ 
+ #back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Initially hidden */
+  background-color: #a41060;
+  color: #efecec;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #a1e4ca;
+  color: #000;
+  box-shadow: 5px 5px 10px 
+  rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+
+
+
